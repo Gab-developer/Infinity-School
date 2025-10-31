@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 07</title>
+    <style>
+        :root{
+            --big-font: 30px;
+            --small-font: 15px;
+            --gap-big: 20px;
+            --gap-small: 30px;
+        }
+        @media (max-width: 600px){
+            body{
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+            .tst1{
+                font-size: var(--small-font);
+                gap: var(--gap-big);
+                background-color: rgb(0, 0, 0);
+                color: rgb(26, 235, 19);
+                padding: 20px;
+            }
+            .tst2{
+                font-size: var(--small-font);
+                gap: var(--gap-big);
+                background-color: rgb(26, 235, 19);
+                color: rgb(0, 0, 0);
+                padding: 20px;
+            }
+        }
+        @media (min-width: 600px){
+            body{
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+            .tst1{
+                font-size: var(--big-font);
+                gap: var(--gap-big);
+                background-color: rgb(26, 235, 19);
+                color: rgb(0, 0, 0);
+                padding: 20px;
+            }
+            .tst2{
+                font-size: var(--big-font);
+                gap: var(--gap-big);
+                background-color: rgb(0, 0, 0);
+                color: rgb(26, 235, 19);
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="tst1">Teste 1</p>
+        <p class="tst2">Teste 2</p>
+    </div>
+</body>
+</html>
