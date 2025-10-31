@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <title>Teste</title>
+    <style>
+        /* Tela para dispositivos menores */
+        @media (max-width: 600px) {
+            .container{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input{
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        input::placeholder{
+            display: flex;
+            text-align: center;
+        }
+
+        button{
+            border-radius: 5px;
+            border: 1px solid black;
+            transition: background-color 0.5s;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover{
+            background-color: aqua;
+            cursor: pointer;
+        }
+    }
+        /* Tela para largura fixa */
+        @media (min-width: 600px){
+            body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            width: 300px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        input{
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        input::placeholder{
+            display: flex;
+            text-align: center;
+        }
+
+        button{
+            border-radius: 5px;
+            border: 1px solid black;
+            transition: background-color 0.5s;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover{
+            background-color: rgb(31, 247, 3);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="username">
+                <input type="text" placeholder="Nome de usuário" required>
+                <i class='bxr  bx-user-circle'    ></i> 
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Senha" required>
+                <i class='bxr  bx-lock'    ></i> 
+            </div>
+            <div><button type="submit">Enviar</button></div>
+            <div> <button type="reset">Limpar</button></div>
+        </form>
+    </div>
+</body>
+</html>
